@@ -21,7 +21,7 @@
 ### Run flume:
   Run command in main catalog.
   **for Windows:**
-  * bin/flume-ng agent -n agent -c conf -f conf/flume.properites
+  * bin/flume-ng agent -n agent -c conf -f conf/flume.properties
   
   Command should create the agent composed of source, channel and sink.
   * source.type = http -> recive http requests
