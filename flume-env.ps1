@@ -17,7 +17,8 @@
 
 # Give Flume more memory and pre-allocate, enable remote monitoring via JMX
 #$JAVA_OPTS="-Xms100m -Xmx200m -Dcom.sun.management.jmxremote"
-$JAVA_OPTS="-Xms500m -Xmx1000m -Dcom.sun.management.jmxremote"
+#$JAVA_OPTS="-Xms500m -Xmx1000m -Dcom.sun.management.jmxremote"
+$JAVA_OPTS="-Xms500m -Xmx1000m -Dcom.sun.management.jmxremote -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=6006"
 
 # Let Flume write raw event data and configuration information to its log files for debugging
 # purposes. Enabling these flags is not recommended in production,
