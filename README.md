@@ -20,8 +20,10 @@
 
 ### Run flume:
   Run command in main catalog.
+ 
   **for Windows:**
-  * bin/flume-ng agent -n agent -c conf -f conf/flume.properties
+  * bin/flume-ng agent -n agent -c conf -f conf/flume.properties -property "variablePath=C:\Users\EwelinaT\Desktop\apache-flume-1.9.0-bin\conf\variables.json" 
+  * properies: variablePath is the path to the file with linguistic variables
   
   Command should create the agent composed of source, channel and sink.
   * source.type = http -> recive http requests
